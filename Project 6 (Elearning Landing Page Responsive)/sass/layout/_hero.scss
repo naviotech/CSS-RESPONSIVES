@@ -1,0 +1,142 @@
+.hero{
+    @include breakpoint(tablet){
+        display: grid;
+        margin-top: 100px;
+        height:400px;
+        grid-template-columns: 50% 50%;
+    }
+    @include breakpoint(desktopxl){
+        display: grid;
+        margin-top: 100px;
+        height:400px;
+        grid-template-columns: 30% 50%;
+    }
+    &__primary{
+        margin-bottom:70px;
+        @include breakpoint(tablet){
+            margin-bottom: 0px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 26px;
+            color: $black;
+        }
+        p{  
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 26px;
+            color:#83869A;
+            line-height: 26px;
+        }
+        &__button{
+            @include button-orange();
+        }
+    }
+    &__secondary{
+        max-width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 92px;
+        position: relative;
+        @include breakpoint(tablet){
+            margin-bottom: 0px;
+        }
+        &__one{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 16px;
+            background-color: white;
+            position: absolute;
+            border-radius: 10px;
+            top:-20px;
+            right:25px;
+            z-index: 2;
+            box-shadow: 7px 14px 20px 0px #39393a8f;
+            @include breakpoint(tablet){
+                top:-50%;
+                right:-60% ;
+                position: relative;
+            }
+            @include breakpoint(tablethorizontal){
+                top:-50%;
+                right:-65% ;
+                position: relative;
+            }
+            @include breakpoint(desktop){
+                top:-60%;
+                right:-85% ;
+                position: relative;
+            }
+            @include breakpoint(desktopxl){
+                display:none;
+            }
+            &__one{
+                color:#83869A;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            &__two{
+                color:$black;
+                font-size: 32px;
+                font-weight: 800;
+            }
+        }
+        &__two{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            z-index: 2;
+            padding: 16px 45px 16px 20px;
+            border-radius: 10px;
+            box-shadow: -4px 20px 20px 4px rgba(57, 57, 58, 0.1607843137);
+            position: absolute;
+            bottom: -20px;
+            left:25px;
+            @include breakpoint(tablet){
+                bottom:-30%;
+                left:-25%;
+                position: relative;
+            }
+            @include breakpoint(tablethorizontal){
+                position: relative;
+                bottom: -35%;
+                left:-10%;
+            }
+            @include breakpoint(desktop){
+                position: relative;
+                bottom: -35%;
+                left:10%;
+            }
+            @include breakpoint(desktopxl){
+                display: none;
+            }
+            &__one{
+                color:#83869A;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            &__two{
+                color:$black;
+                font-size: 32px;
+                font-weight: 800;
+            }
+        }
+        &__woman{
+            position: relative;
+            width: 253px;
+            @include breakpoint(tablet){
+                display:none;
+            }
+        }
+        &__woman__tablet{
+            display: none;
+            @include breakpoint(tablet){
+                display: inline-block;
+            }
+        }
+    }
+}

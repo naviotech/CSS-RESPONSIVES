@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    padding: 42px 16px;
+    margin-bottom: 0%;
+    @include breakpoint(tablet){
+        padding:40px;
+    }
+    @include breakpoint(desktop){
+        padding: 47px 165px;
+    }
+    &__logo{
+        img{
+            width: 89px;
+        }
+    }
+    &__button{
+        @include button-violet();
+        &:hover{
+            background-image: black;
+        }
+    }
+
+    
+}   

@@ -1,0 +1,65 @@
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin button-black($bg:$black, $color:white){
+        text-decoration: none;
+        color:$color;
+        background-color: $bg;
+        font-weight: 700;
+        padding: 11px 24px;
+        border-radius: 28px;
+        font-size: 16px;
+        &:hover{
+          background-color: #666CA3;
+        }
+}
+
+@mixin button-orange($bg:$gradient-orange, $color:white){
+  text-decoration: none;
+  color:$color;
+  background-image: $bg;
+  font-weight: 700;
+  padding: 11px 24px;
+  border-radius: 28px;
+  font-size: 16px;
+  &:hover{
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%),
+    linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  }
+}
+@mixin button-violet($bg:$gradient-lila, $color:white){
+  text-decoration: none;
+  color:$color;
+  background-image: $bg;
+  font-weight: 700;
+  padding: 11px 24px;
+  border-radius: 28px;
+  font-size: 16px;
+  &:hover{
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, 
+    rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+  }
+}
