@@ -11,7 +11,7 @@ Abre el proyecto en tu editor de código preferido, como Visual Studio Code.
 3. Iniciar el Servidor Local:
 Utiliza la extensión "Go Live" en Visual Studio Code o cualquier otro método para iniciar un servidor local y ver el proyecto en tu navegador web. Dado que ya está compilado, no es necesario realizar ninguna compilación adicional ni instalar dependencias.
 
-## Headers Responsivos:
+## Webs Responsive:
 Dado que el proyecto es responsivo da igual en que dispositivo lo abras, este se adaptará sin problemas!
 
 ## Entorno de Desarrollo:
