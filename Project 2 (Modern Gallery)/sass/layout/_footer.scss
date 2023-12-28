@@ -1,0 +1,153 @@
+.home{
+    footer{
+        background-color: $negro;
+        width: 100%;
+        padding: 48px 32px;
+        h3{
+            color:$blanco;
+            margin-bottom: 38px;
+            line-height: 19px;
+        }
+        p{
+            color:$blanco;
+            margin-bottom: 38px;
+            font-family: $outfit;
+            width: 90%;
+        }
+        nav{
+            display: flex;
+            gap:16px;
+            a{
+                text-decoration: none;
+                .icon-instagram:before {
+                    content: "\ea92";
+                    color: white;
+                }
+                .icon-twitter:before {
+                    content: "\e901";
+                    color: white;
+                }
+                .icon-facebook:before {
+                    content: "\e900";
+                    color: white;
+                }
+            }
+            
+        }
+        @include breakpoint("tablet"){
+            padding: 56px 40px;
+            display: flex;
+            nav{
+                margin-left: auto;
+            }
+            h2{
+                margin-right: 65px;
+                white-space: nowrap;
+                color: $blanco;
+            }
+            p{
+                margin-right: 20%;
+                padding-right: 35px;
+            }
+            i{
+                font-size: 20px;
+            }
+        }
+        @include breakpoint("desktop"){
+            padding: 80px 165px;
+            nav{
+                margin-left: auto;
+            }
+            h2{
+                margin-right: 140px; 
+                white-space: nowrap;
+                line-height: 25px;
+                font-size: 30px;
+                
+            }
+            p{
+                margin-right: 20%;
+                padding-right: 35px;
+            }
+            i{
+                font-size: 22px;
+            }
+        }
+    }
+}
+.location{
+    footer{
+        background-color: $naranja;
+        width: 100%;
+        padding: 48px 32px;
+        @include breakpoint("tablet"){
+            padding: 56px 40px;
+            display: flex;
+            nav{
+                margin-left: auto;
+            }
+            h2{
+                margin-right: 65px;
+                white-space: nowrap;
+            }
+            p{
+                margin-right: 20%;
+                padding-right: 35px;
+            }
+            i{
+                font-size: 20px;
+            }
+        }
+        @include breakpoint("desktop"){
+            padding: 80px 165px;
+            nav{
+                margin-left: auto;
+            }
+            h2{
+                margin-right: 140px; 
+                white-space: nowrap;
+                line-height: 25px;
+                font-size: 30px;
+                
+            }
+            p{
+                margin-right: 20%;
+                padding-right: 35px;
+            }
+            i{
+                font-size: 22px;
+            }
+        }
+        h2{
+            color:$negro;
+            margin-bottom: 38px;
+            line-height: 25px;
+            font-size: 30px;
+        }
+        p{
+            color:$negro;
+            margin-bottom: 38px;
+            font-family: $outfit;
+            width: 90%;
+        }
+        nav{
+            display: flex;
+            gap:16px;
+            a{
+                text-decoration: none;
+                .icon-facebook:before {
+                    content: "\e900";
+                    color: $negro;
+                }
+                .icon-twitter:before {
+                    content: "\e901";
+                    color: black;
+                }
+                .icon-instagram:before {
+                    content: "\ea92";
+                    color: $negro;
+                }
+            }
+        }
+    }
+}

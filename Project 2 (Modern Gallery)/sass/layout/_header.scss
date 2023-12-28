@@ -1,0 +1,224 @@
+.home{
+    .hero{
+        width: 100%;
+        margin-bottom: 120px;
+        figure{
+            img{
+                width: 100%;
+                height: auto;
+                margin-bottom: 32px;
+            }
+            .tablet{
+                display: none;
+            }
+            .desktop{display: none;}
+            @include breakpoint("tablet"){
+                img{
+                    display: none;
+                }
+                .tablet{
+                    display: block;
+                    width: 60%;
+                }
+                .desktop{
+                    display: none;
+                }
+            }
+            @include breakpoint("desktop"){
+                img{display:none;}
+                .tablet{display:none}
+                
+                .desktop{
+                    display: block;
+                    width: 33%;
+                    margin-right: auto;
+                    margin-left:auto;
+                    position: relative;
+                }
+                
+                
+                
+            }
+        }
+        @include breakpoint("tablet"){
+            
+            section{
+                position: absolute;
+                top:17%;
+                left: 50%;
+                h1{
+                    white-space: nowrap;
+                    margin-bottom: 48px;
+                    font-size: 70px;
+                    line-height: 60px;
+                }
+                p{
+                    margin-bottom: 48px;
+                    font-size: 18px;
+                }
+            }
+            
+        }
+        @include breakpoint("desktop"){
+            h1{
+                position: absolute;
+                font-size: 96px;
+                left: -140%;
+                
+                color: $blanco;
+                
+            }
+            section{
+                left: 63%;
+                top: 28%;
+                p{
+                    width: 80%;
+                    font-size: 22px;
+                }
+                a{
+                    width: 60%;
+                }
+            }
+        }
+        
+        h1{
+            width: 70%;
+            margin-left: 16px;
+            margin-right: 16px;
+            font-size: 60px;
+            line-height: 55px;
+            margin-bottom: 32px;
+        }
+        p{
+            margin-left: 16px;
+            margin-right: 16px;
+            font-size: 18px;
+            font-weight: normal;
+            font-family: $outfit;
+            margin-bottom: 32px;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 16px;
+            margin-right: 16px;
+            &:hover{
+                p{
+                    background-color: $naranja;
+                }
+                img{
+                    background-color: $negro;
+                }
+            }
+            p{
+                font-weight: 800;
+                font-family: $bigshoulder;
+                color:$blanco;
+                background-color: $negro;
+                padding: 20px 32px;
+                font-size: 16px;
+                margin: 0px;
+                letter-spacing: 3.636px;
+            }
+            
+            img{
+                padding: 20px;
+                width: 50px;
+                height: 59.3px;
+                background-color: $naranja;
+                margin: 0%;
+            }
+            
+        }
+
+    }
+}
+
+.location{
+    width: 100%;
+    header{
+        width: 100%;
+        position: relative;
+        a{
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            position: absolute;
+            top:0%;
+            left:0%;
+            @include breakpoint("tablet"){
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            @include breakpoint("desktop"){
+                margin-left: 165px;
+                margin-right: 165px;
+            }
+            &:hover{
+                p{
+                    background-color: $naranja;
+                }
+                img{
+                    background-color: $negro;
+                }
+            }
+            p{
+                font-weight: 800;
+                font-family: $bigshoulder;
+                color:$blanco;
+                background-color: $negro;
+                padding: 20px 32px;
+                font-size: 16px;
+                margin: 0px;
+                letter-spacing: 3.636px;
+            }
+            
+            img{
+                padding: 20px;
+                width: 50px;
+                height: 59.3px;
+                background-color: $naranja;
+                margin: 0%;
+            }
+            
+            
+            
+        }
+        figure{
+            margin: 0%;
+            .tablet{
+                display: none;
+            }
+            .desktop{
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: auto;
+
+            }
+            @include breakpoint("tablet"){
+                .tablet{
+                    display: block;
+                }
+                img{
+                    display: none;
+                }
+            }
+            @include breakpoint("desktop"){
+                .tablet{
+                    display: none;
+                }
+                img{
+                    display: none;
+                }
+                .desktop{
+                    display: block;
+                    
+                }
+            }
+        }
+    }
+
+}

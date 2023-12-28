@@ -1,0 +1,19 @@
+html * {
+    font-family: $bigshoulder;
+}
+
+.home, .location {
+    overflow-x: hidden;
+    width: 100%;
+    background-color: $fondo;
+}
+.home{
+    .hero{
+        @include breakpoint("desktop"){
+            background-image: url(../../img/desktop/rectangulonegro.jpg);
+            background-repeat: no-repeat;
+            background-size: 34%; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el body */
+        }
+    }
+    
+}

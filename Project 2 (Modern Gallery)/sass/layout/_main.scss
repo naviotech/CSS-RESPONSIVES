@@ -1,0 +1,331 @@
+.home{
+    main{
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 120px;
+        @include breakpoint("tablet"){
+            padding-left: 40px;
+            padding-right:40px;
+        }
+        @include breakpoint("desktop"){
+            padding-left: 165px;
+            padding-right: 165px;
+        }
+        .grid__one{
+            @include breakpoint("tablet"){
+                display: grid;
+                grid-template-columns: 40% 60%;
+                gap: 11px;
+                .primary{
+                    display: none;
+                }
+            }
+            @include breakpoint("desktop"){
+                .primary{
+                    display: none;
+                }
+            }
+            width: 100%;
+            .primary{
+                img{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 25px;
+                }
+                &__tablet{
+                    display:none;
+                }
+                &__desktop{
+                    display: none;
+                }
+                @include breakpoint("tablet"){
+                    img{display: none;}
+                    &__tablet{
+                        display: block;
+                        grid-column: 2;
+                        grid-row: 1;
+                        object-fit: fill;
+                        max-width: 100%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            
+                        }
+                    }
+                }
+                @include breakpoint ("desktop") {
+                    img{display: none;}
+                    &__desktop{
+                        display: block;
+                        grid-column: 2;
+                        grid-row: 1;
+                        object-fit: fill;
+                        max-width: 100%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    &__tablet{
+                        display: none;
+                    }
+                }
+            }
+            .introduccion{
+                margin-bottom: 32px;
+                h2{
+                    font-size: 50px;
+                    margin-bottom: 21px;
+                    line-height: 45px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-family: $outfit;
+                    width: 90%;
+                }
+                @include breakpoint("tablet"){
+                    grid-column: 1;
+                    grid-row: 1;
+                    margin-bottom: 0px;
+                    padding: 85px 29px;
+                    h2{
+                        width: 100%;
+                    }
+                    p{
+                        width: 90%;
+                    }
+                }
+                @include breakpoint("desktop"){
+                    padding: 65px 48px;
+                    h2{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .grid__two{
+            @include breakpoint("tablet"){
+                display: grid;
+                grid-template-columns: 60% 40%;
+                gap: 11px;
+                .third{
+                    display: none;
+                }
+                .secondary{
+                    display: none;
+                }
+            }
+
+            .secondary{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                margin-bottom: 16px;
+                &__tablet{
+                    display: none;
+                }
+                &__desktop{
+                    display:none;
+                }
+                @include breakpoint("tablet"){
+                    img{
+                        display: none;
+                    }
+                    &__tablet{
+                        display: block;
+                        grid-column: 1;
+                        grid-row: 2/4;
+                        object-fit: fill;
+                        max-width: 100%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                @include breakpoint("desktop"){
+                    img{
+                        display: none;
+                    }
+                    &__desktop{
+                        display: block;
+                        grid-column: 1;
+                        grid-row: 2/4;
+                        object-fit: fill;
+                        max-width: 100%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    &__tablet{
+                        display:none;
+                    }
+                }
+            }
+            .third{
+                img{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 16px;
+                }
+                &__tablet{
+                    display:none;
+                }
+                &__desktop{
+                    display:none;
+                }
+                @include breakpoint("tablet"){
+                    img{display: none;}
+                    &__tablet{
+                        display: block;
+                        grid-column:2;
+                        grid-row: 2;
+                        object-fit: fill;
+                        max-width: 100%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                @include breakpoint("desktop"){
+                    img{display: none;}
+                    &__desktop{
+                        display: block;
+                        grid-column:2;
+                        grid-row: 2;
+                        object-fit: fill;
+                        max-width: 100%;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    &__tablet{display:none;}
+                }
+            }
+            .finally{
+                padding: 48px 24px;
+                background-color: $negro;
+                h2{
+                    font-size: 50px;
+                    margin-bottom: 24px;
+                    line-height: 45px;
+                    color:$blanco;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 300;
+                    font-family: $outfit;
+                    width: 100%;
+                    color: $blanco;
+                }
+                @include breakpoint("tablet"){
+                    grid-column: 2;
+                    grid-row: 3;
+                    padding: 85px 29px;
+                    p{
+                        width: 90%;
+                    }
+                }
+                @include breakpoint("desktop"){
+                    padding: 65px 48px;
+                }
+            }
+        
+        }   
+    }
+}
+.location{
+    main{
+        width: 100%;
+        background-color: $negro;
+        @include breakpoint("tablet"){
+            padding: 88px 40px;
+        }
+        @include breakpoint("desktop"){
+            padding: 104px 165px;
+        }
+        section{
+            background-color: $negro;
+            width: 100%;
+            padding: 48px 16px;
+            @include breakpoint("tablet"){
+                
+                display: grid;
+                grid-template-columns: 40% 60%;
+                column-gap:30px ;
+                .title{
+                    h1{
+                        font-size: 55px;
+                        width: 50%;
+                    }
+                }
+                
+                .content{
+                    .two{
+                        width: 90%;
+                    }
+                }
+            }
+            @include breakpoint("desktop"){
+                column-gap: 100px;
+                .title{
+                    h1{
+                        font-size: 70px;
+                    }
+                }
+                .content{
+                    h2{
+                        color:$naranja;
+                        margin-bottom: 24px;
+                        font-size: 36px;
+                    }
+                    .one{
+                        margin-bottom: 32px;
+                        font-family: $outfit;
+                        color: $blanco;
+                        font-size: 22px;
+                    }
+                    .two{
+                        font-family: $outfit;
+                        font-size: 22px;
+                        width: 95%;
+                        color: $blanco;
+                    }
+                }
+            }
+            h1{
+                color:$blanco;
+                margin-bottom: 48px;
+                font-size: 50px;
+            }
+            h2{
+                color:$naranja;
+                margin-bottom: 20px;
+                font-size: 32px;
+            }
+            .one{
+                margin-bottom: 20px;
+                font-family: $outfit;
+                color: $blanco;
+                font-size: 18px;
+            }
+            .two{
+                font-family: $outfit;
+                font-size: 18px;
+                width: 90%;
+                color: $blanco;
+            }
+        }
+    }
+}
